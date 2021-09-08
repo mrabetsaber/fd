@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    padding-top: 50px;
+    background-color: blanchedalmond;
+}
+a:hover{
+    color:red;
+}
+legend{
+    padding-top: 25px;
+}

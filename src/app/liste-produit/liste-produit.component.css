@@ -1,0 +1,30 @@
+body{
+    background-color:#ecf0f1;
+    height:5000px;
+}
+a{
+    padding-left: 25px;
+    color:aliceblue;
+}
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+.example-card {
+    max-width: 400px;
+  }
+
+h1{
+    padding-top: 50px;
+    text-align: center;
+}
+button{
+    margin-left: 10px;
+}
+nav{
+    margin: 10px;
+}
+h4{
+    padding-top: 20px;
+    color:aliceblue;
+}

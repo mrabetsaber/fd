@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<a  routerLink="">Retourner</a>
+<fieldset>
+    <legend>Creer un Compte</legend>
+    <label>E-mail</label><br>
+    <input type="email" #email><br>
+    <label>Mot de passe</label><br>
+    <input type="password" #mdp><br><br>
+    <button type="submit" class="btn btn-primary" (click)="signup(email.value, mdp.value)">Creer Compte</button>
+</fieldset>
+    <hr>
+    <h3>Avez-vous deja un compte</h3>
+<fieldset>
+    <legend>Se Connecter</legend>
+    <label>E-mail</label><br>
+    <input type="email" #l><br>
+    <label>Mot de passe</label><br>
+    <input type="password" #m><br><br>
+    <button type="submit" class="btn btn-primary" (click)="signin(l.value,m.value)">Connexion</button>
+</fieldset>
+</body>
+</html>

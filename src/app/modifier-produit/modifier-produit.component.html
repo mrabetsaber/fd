@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Modification Produit</title>
+</head>
+<body>
+    <a routerLink="/listeProduits">Liste des Produits</a>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <fieldset>
+            <legend>Modification d'un Produit</legend>
+            <label>Nom</label><br>
+            <input type="text" name="nom" [(ngModel)]="nom"><br>
+            <label>Description</label><br>
+            <textarea name="description" [(ngModel)]="description"></textarea><br>
+            <!--<label>Url d'image</label><br>
+            <input type="text" name="image" [(ngModel)]="url" value="{{url}}"><br>-->
+            <label>prix</label><br>
+            <input type="number" name="prix" [(ngModel)]="prix"><br><br>
+            <button type="submit">Modifier</button>
+        </fieldset>
+    </form>
+</body>
+</html>

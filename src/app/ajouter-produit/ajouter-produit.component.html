@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Ajouter Produit</title>
+</head>
+<body>
+    <a routerLink="/listeProduits">Liste des Produits</a>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <fieldset>
+            <legend>Ajout d'un Produit</legend>
+            <label>Nom</label><br>
+            <input type="text" name="nom" ngModel><br>
+            <label>Description</label><br>
+            <textarea name="description" ngModel></textarea><br>
+            <label>Prix</label><br>
+            <input type="text" name="prix" ngModel><br>
+            <label>url d'image</label><br>
+            <input type="text" name="image" ngModel><br><br>
+            <!--<div class="example-full-widt">
+         
+                <img [src]="url" height="20%" width="20%" *ngIf="imgExist"><br>
+                <input  type="file"  id="file" (change)="onSelectFile($event)">
+                <p>Entrez l'image de votre produit : </p>
+                <label class="inputImg" for="file">Appuez ici!</label>
+                   
+              </div>-->
+            <button mat-raised-button color="accent" type="submit">Ajouter Produits</button>
+        </fieldset>
+    </form>
+</body>
+</html>
+
